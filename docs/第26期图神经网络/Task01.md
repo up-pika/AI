@@ -1,14 +1,4 @@
----
-title: 第26期-Task01 简单图论、环境配置与PyG库
-date: 2021-06-15 11:30:23
-tags: 
-- 图论
-- PyG库
-categories:
-- 图神经网络GNN
-- 第26期集成学习
-index_img:http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210412202410444.png
----
+# 第26期-Task01 简单图论、环境配置与PyG库
 
 # 一、理论先知
 
