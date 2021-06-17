@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DataWhale每期组队学习</title>
+  <title>DataWhale组队学习</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -12,12 +12,48 @@
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '每期内容',
+      nameLink: 'https://lovewhl.gitee.io/',
+      name: '每期组队学习内容',
       repo: 'https://github.com/wuhuilan/AI.git',
-      coverpage: true 
+      formatUpdated: '{MM}/{DD} {HH}:{mm}',
+      coverpage: True,
+      loadSidebar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      alias:{
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },
+      search: {
+        paths: 'auto',
+        placeholder: '小主，请输入要搜索的关键字',
+        noData: '小主，未找到结果！',
+        depth: 6,
+      },
+      pagination:{
+        previousText: '上一章节',
+        nextText:'下一章节',
+      }
+
     }
   </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+
 </body>
 </html>
+ <!--
+    name:文档标题，显示在侧栏顶部
+    repo: github地址；
+    coverpage:设置是否启用封面页，默认不启用; README.md 渲染主页；
+    loadSidebar: 加载自定义侧边栏，需要自己创建_sidebar.md
+    subMaxLevel: 自定义侧边栏后默认不会再生成目录，需要通过设置生成目录的最大层级开启这个功能
+    auto2top: 切换页面后是否自动跳转到页面顶部
+    alias:避免不必要的回退过程
+    topMargin: 40,内容页在滚动到指定的锚点时，距离页面顶部有一定空间
+    Pagination: 分页导航，在文档最下方展示上一个文档和下一个文档
+  -->
