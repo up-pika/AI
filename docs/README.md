@@ -1,7 +1,7 @@
 # DataWhale 组队学习
 >记录记录和分享DataWhale每期的学习笔记，总结和心得。
 
->项目内容浏览网址:https://wuhuilan.github.io/AI/#/
+>项目内容浏览网址: https://wuhuilan.github.io/AI/#/
 
 >个人博客浏览网址：https://lovewhl.gitee.io/
 
