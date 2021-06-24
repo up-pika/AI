@@ -59,7 +59,7 @@
 - 下图所示为$walk(v_1, v_2) = (v_1, e_6,e_5,e_4,e_1,v_2)$，其中红色数字标识了边的访问序号。
 - 在“行走”中，节点是运行重复的。
 
-<img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508134652644.png" alt="walk" style="zoom:50%;" />
+<center><img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508134652644.png" alt="walk" style="zoom:50%;" /></center>
 
 **定理六**：
 
@@ -77,7 +77,7 @@
 
 - 给定图$\mathcal{G}^{\prime}=\{\mathcal{V}^{\prime}, \mathcal{E}^{\prime}\}$是图$\mathcal{G}=\{\mathcal{V}, \mathcal{E}\}$的子图。记属于图$\mathcal{G}$但不属于$\mathcal{G}^{\prime}$图的结点集合记为$\mathcal{V}/\mathcal{V}^{\prime}$ 。如果属于$\mathcal{V}^{\prime}$的任意结点对之间存在至少一条路径，但不存在一条边连接属于$\mathcal{V}^{\prime}$的结点与属于$\mathcal{V}/\mathcal{V}^{\prime}$的结点，那么图$\mathcal{G}^{\prime}$是图$\mathcal{G}$的连通分量。
 
-  <img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508145204864.png" alt="连通分量实例" title="连通分量实例" style="zoom: 67%;" />
+  <center><img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508145204864.png" alt="连通分量实例" title="连通分量实例" style="zoom: 67%;" /></center>
 
   左右两边子图都是整图的连通分量。
 
@@ -116,14 +116,20 @@ $$
 ### 1.1.3 图的种类
 
 - **同质图**（Homogeneous Graph）：只有一种类型的节点和一种类型的边的图。
+
 - **异质图**（Heterogeneous Graph）：存在多种类型的节点和多种类型的边的图。
-  <img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210516164150162.png" alt="异质图" style="zoom:30%;" />
+  
+  <center><img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210516164150162.png" alt="异质图" style="zoom:30%;" /></center>
+  
 - **二部图**（Bipartite Graphs）：节点分为两类，只有不同类的节点之间存在边。
-  <img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210516164400658.png" alt="二部图" style="zoom:25%;" />
+
+  <center><img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210516164400658.png" alt="二部图" style="zoom:25%;" /></center>
+
+  
 
 ### 1.1.4 图结构数据上的机器学习
 
-<img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508171206912.png" alt="" style="zoom: 33%;" />
+<center><img src="http://huilan-typora-picture.oss-cn-beijing.aliyuncs.com/img/image-20210508171206912.png" alt="" style="zoom: 33%;" /></center>
 
 1. **节点预测**：预测节点的类别或某类属性的取值
    1. 例子：对是否是潜在客户分类、对游戏玩家的消费能力做预测
