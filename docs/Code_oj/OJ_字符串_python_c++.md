@@ -1,6 +1,10 @@
 # 字符串输入输出
 
+---
+
 练习链接：[(2条未读私信) 牛客竞赛_ACM/NOI/CSP/CCPC/ICPC算法编程高难度练习赛_牛客竞赛OJ (nowcoder.com)](https://ac.nowcoder.com/acm/contest/5657)
+
+---
 
 ## 1. 字符串 1
 

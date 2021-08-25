@@ -32,9 +32,11 @@
 
 内部错误:   请仔细检查你的代码是否有未考虑到的异常情况，例如非法调用、代码不符合规范等。
 
-牛客oj：[(2条未读私信) 牛客竞赛_ACM/NOI/CSP/CCPC/ICPC算法编程高难度练习赛_牛客竞赛OJ (nowcoder.com)](https://ac.nowcoder.com/acm/contest/5657)
+---
 
+练习链接：牛客oj[(2条未读私信) 牛客竞赛_ACM/NOI/CSP/CCPC/ICPC算法编程高难度练习赛_牛客竞赛OJ (nowcoder.com)](https://ac.nowcoder.com/acm/contest/5657)
 
+---
 
 # 数组的输入输出
 
