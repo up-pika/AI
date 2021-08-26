@@ -1,4 +1,88 @@
-# [C++常用字符串函数使用整理](https://www.cnblogs.com/gzx6688/p/10741507.html)
+[TOC]
+
+# 获取静态数组和动态数组的长度
+
+总结:
+**$\textcolor{blue}{获取char类型字符串数组长度：可以用strlen( )函数}$**
+
+**$\textcolor{blue}{获得string类型的字符串长度：可用string.size()函数}$**
+
+**$\textcolor{blue}{获取数组长度: 使用sizeof(array) / sizeof(array[0])，注意在C/C++中并没有提供直接获取}$**
+
+**$\textcolor{blue}{数组长度的函数vector可以直接由a.size()获得动态数组长度}$**
+
+## 1. 字符串数组
+
+获取字节型的字符串数组长度：可以用strlen( )函数
+
+获得string类型的字符串长度：可用string.size()函数
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+	char str1[] = "hello world!"; // 长度为12
+    int len_str1 = strlen(str1);
+    cout << "str1:" << str1 << endl;
+    cout << "str1_len:" << len_str1 << endl;
+
+    string str2 = "hello world"; // 长度为11
+    cout << "str2:" << str2 << endl;
+    cout << "str2_len:" << str2.size() << endl;
+}
+```
+
+```markdown
+输出：
+
+str1:hello world!
+str1_len:12
+str2:hello world
+str2_len:11
+```
+
+## 2. 静态数组
+
+获取数组长度: 使用sizeof(array) / sizeof(array[0])，注意在C/C++中并没有提供直接获取数组长度的函数
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+	int b1[] = { 0, 2, 4, 5, 1, 3, 8, 6 };
+	cout << "len_b1: " << sizeof(b1)/sizeof(b1[0]) << endl;
+}
+```
+
+```
+输出：
+len_b1: 8
+```
+
+## 3. 动态数组
+
+数组长度的函数vector可以直接由a.size()获得动态数组长度
+
+```cpp
+#include <iostream>
+#include <string>
+using namespace std;
+int main(){
+	vector<int> a1 = { 0, 2, 4, 5, 1, 3, 8, 6 };
+    cout << "len_a1: " << a1.size() << endl;
+}
+```
+
+```
+输出：
+len_a1: 8
+```
+
+
+
+# C++常用字符串函数使用整理[^1]
 
 ## strlen（字符数组）
 
@@ -6,11 +90,9 @@
 - 说明：该函数的实参可以是字符数组名，也可以是字符串。
 - 使用样例：
 
-```
+```cpp
 char s1[80] = "China";
-
 cout<<strlen(s1)<<'\n';　　　　　　//输出结果为5
-
 cout<<strlen("大学生"）<<'\n';　　  //输出结果为6　
 ```
 
@@ -27,27 +109,22 @@ cout<<strlen("大学生"）<<'\n';　　  //输出结果为6　
 
 如以下形式：
 
-```
+```cpp
 str1 ={''Good"};　　　　//不合法
-
 str1 = str2;　　　　　　//不合法
-
 char a[5],c1,c2;
-
 c1 = 'A'; c2 = 'B';　　　 //合法
-
 c[0] = 'C';　　　　　　 //合法
-
 char g[20] = "aaaa'' 　  //合法
 ```
 
 - 使用样例：
 
-```
-`char a[20]="aaaaaa",b[20]="bbb";`
-`strcpy(a,b);`
-`cout<<a; `
-`return 0;`
+```cpp
+char a[20]="aaaaaa",b[20]="bbb";
+strcpy(a,b);
+cout<<a; 
+return 0;
 ```
 
 - 结果说明：数组b的值将会覆盖数组a的值，所以结果为"bbb"。
@@ -58,7 +135,7 @@ char g[20] = "aaaa'' 　  //合法
 - 说明：该函数中的第二个参数也可以是一个字符串常量。
 - 使用样例：
 
-```
+```cpp
 char s1[20] = "one", s2 = "two", s3[20] = "three";
 
 strcat(s1,s2);
@@ -79,13 +156,10 @@ strcat(s1,s3);
   （3）这种比较是按字符的ASCII码值的大小比较的。
 - 使用样例：
 
-```
+```cpp
 strcmp("Student","Student");　　　　　　//比较结果为0
-
 strcmp("student","Student");　　　　　　//比较结果为1
-
 strcmp("Student","student");　　　　　　//比较结果为-1
-
 int a=strcmp("stude","student");
 ```
 
@@ -96,9 +170,8 @@ int a=strcmp("stude","student");
 - 功能：将字符数组中存放的所有大写字母变成小写字母，其它字母不变。
 - 使用样例：
 
-```
+```cpp
 char s1[ ] = "Student1";
-
 strlwr (s1);
 ```
 
@@ -109,9 +182,8 @@ strlwr (s1);
 - 功能：将字符数组中存放的所有小写字母变成大写字母，其它字母不变。
 - 使用样例：
 
-```
+```cpp
 char s1[ ] = "Student2";
-
 strupr (s1);
 ```
 
@@ -125,11 +197,9 @@ strupr (s1);
   （2）当字符数组2中表示的字符串的长度小于len时，则将该字符串全部复制到第一个参数所指定的数组中。
 - 使用样例：
 
-```
+```cpp
 char s1[ 80] = "aaaaaa", s2[80];
-
 strncpy(s1,"student", 4);
-
 strncpy(s2,"teacher",10);
 ```
 
@@ -146,3 +216,7 @@ strncpy(s2,"teacher",10);
 - 使用样例：
   `cout<<strncmp("English","England",4)<<endl;`
 - 结果说明：因为比较的两个字符串的前4个字符相同，所以输出的值为0。
+
+参考资料：
+
+[^1]: https://www.cnblogs.com/gzx6688/p/10741507.html
