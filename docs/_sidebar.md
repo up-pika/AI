@@ -2,6 +2,8 @@
 - [编程 力扣 & 牛客](/)
   - [Task01 OJ_数组_ACM输入输出](/Code_oj/OJ_数组_python_c++.md)
   - [Task02 OJ_字符串_ACM输入输出](/Code_oj/OJ_字符串_python_c++.md)
+  - [Task03 c++常用头文件—cin/cout/scanf/printf](/Code_oj/头文件_cin_scanf.md)
+  - [Task04 c++数组长度及字符串常用函数](/Code_oj/c++数组长度及字符串常用函数.md)
 - [第26期 图神经网络](/)
   - [Task01 简单图论、环境配置与PyG库](/26th_GNN/Task01.md)
   - [Task02 消息传递范式](/26th_GNN/Task02.md)
